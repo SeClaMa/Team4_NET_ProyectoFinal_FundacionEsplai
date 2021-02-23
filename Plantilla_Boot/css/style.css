@@ -1,0 +1,26 @@
+.containerHead{
+    background-color: rgb(25, 25, 136);
+    border: rgb(4, 4, 41) 1px solid;
+}
+div.containerHead{
+    color: white;
+}
+div#leftIc{
+    float: left;
+    margin-right: auto;
+}
+
+.container{
+    margin: 0px!important;
+
+}
+#cajaIzquierda #menuIz{
+    background-color: blueviolet;
+    float: left;
+
+    max-width: 5%;
+}
+#cajaDerecha{
+    float: right;
+    margin: auto;
+}
