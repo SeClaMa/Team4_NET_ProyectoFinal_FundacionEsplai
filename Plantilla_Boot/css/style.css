@@ -88,9 +88,47 @@ div#leftIc {
     padding: .2rem;
 }
 
-/* .panel-izquierda{
-    border: 1px solid gray;
-    background-color: lightgray;
-    height:1000px;
-} */
+.panel-izquierda{
+    color:rgba(66, 66, 195, 0.849);
+    border-top: 1px solid gray;
+    background-color: #E5E7E9;
+    padding-left: 20px;
+    height:auto;
+}
 
+.inptext {
+    width: 85%;
+    background-color: #E5E7E9;
+    outline: none;
+}
+
+.border-bottm{
+    border-bottom: 4px solid gray;
+    margin-right: 3%;
+    
+}
+
+.btnn{
+    text-align: left;
+    font-size: 100%;
+    color:rgba(66, 66, 195, 0.849);
+    border-color: rgba(66, 66, 195, 0.849);
+    background-color: white;
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+}
+
+.btnn:focus{
+    transform: scale(1.05,1.05);
+    transform-origin: right;
+    background-color: #D6EAF8;
+}
+
+.aside-footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+}
