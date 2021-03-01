@@ -75,3 +75,22 @@ div#leftIc {
 .pdd {
     padding-left: 100px;
 }
+
+.noticia{
+    /* height: 50px; */
+    width: auto;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.centrar{
+    font-size: 20px;
+    padding: .2rem;
+}
+
+/* .panel-izquierda{
+    border: 1px solid gray;
+    background-color: lightgray;
+    height:1000px;
+} */
+
