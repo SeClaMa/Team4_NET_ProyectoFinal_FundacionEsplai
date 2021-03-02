@@ -1,0 +1,78 @@
+.containerHead{
+    background-color: rgb(25, 25, 136);
+    border: rgb(4, 4, 41) 1px solid;
+}
+div.containerHead{
+    color: white;
+}
+div#leftIc{
+    float: left;
+    margin-right: auto;
+}
+
+.container{
+    margin: 0px!important;
+    min-width: 100%;
+
+}
+#cajaIzquierda #menuIz{
+    background-color: blueviolet;
+    float: left;
+
+    max-width: 5%;
+}
+#cajaDerecha{
+    float: right;
+    margin: auto;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    height: 100%;
+    position: fixed;
+    left: 0;
+}
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background:black;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+#sidebar ul li a:hover {
+    background:blue;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color:blue;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
