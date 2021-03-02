@@ -28,8 +28,13 @@ div#leftIc {
     margin: auto;
 }
 
+<<<<<<< HEAD
 .izq {
     margin-left: 15vh;
+=======
+.izq{
+    margin-left:10vh;
+>>>>>>> 4c7735b3d4e9109fb9cf7014e8ed4cf3c135bf75
 }
 
 #sidebar-wrapper {
@@ -38,7 +43,11 @@ div#leftIc {
     background: #000;
     position: fixed;
     height: 100%;
+<<<<<<< HEAD
     top: 20;
+=======
+    top:20;
+>>>>>>> 4c7735b3d4e9109fb9cf7014e8ed4cf3c135bf75
 }
 
 #page-content-wrapper {
