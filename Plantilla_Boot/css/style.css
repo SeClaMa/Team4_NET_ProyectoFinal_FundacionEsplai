@@ -28,12 +28,17 @@ div#leftIc {
     margin: auto;
 }
 
+.izq{
+    margin-left:10vh;
+}
+
 #sidebar-wrapper {
     left: 0px;
     width: 100px;
     background: #000;
     position: fixed;
     height: 100%;
+    top:20;
 }
 
 #page-content-wrapper {
@@ -41,7 +46,8 @@ div#leftIc {
 }
 
 .sidebar-nav {
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     top: 0;
     width: 100px;
     list-style: none;
