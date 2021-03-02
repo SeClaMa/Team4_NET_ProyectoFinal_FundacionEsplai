@@ -6,9 +6,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using API_ProyectoFinal.Models;
+using API_ProyectoFinal.DTO;
+using System.Linq.Expressions;
+using Microsoft.AspNetCore.Authorization;
 
 namespace API_ProyectoFinal.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class TrabajadoresController : ControllerBase
@@ -25,6 +29,28 @@ namespace API_ProyectoFinal.Controllers
         public async Task<ActionResult<IEnumerable<Trabajadores>>> GetTrabajadores()
         {
             return await _context.Trabajadores.ToListAsync();
+
+        }
+
+       [HttpGet("all")]
+        public IQueryable<TrabajadoresDTO> GetTrabajadoresAll()
+        {
+            var trabajadores = from b in _context.Trabajadores
+                        select new TrabajadoresDTO()
+                        {
+                            Id = b.IdTrabajador,
+                            Apellido1 = b.Apellido1,
+                            Apellido2 = b.Apellido2,
+                            Nombre = b.Nombre,
+                            Cuerpo = b.CuerpoNavigation.Descrip,
+                            Grupo = b.GrupoNavigation.Grupo,
+                            Categoria = b.IdCategoriaNavigation.Descrip,
+                            TipoEmpleado = b.TProvisNavigation.Descrip,
+                            TP = b.TProvisNavigation.IdClasePer,
+                            Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.DEmpresa
+                        };
+
+            return trabajadores;
         }
 
         // GET: api/Trabajadores/5

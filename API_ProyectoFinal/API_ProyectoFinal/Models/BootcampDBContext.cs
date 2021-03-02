@@ -11,6 +11,7 @@ namespace API_ProyectoFinal.Models
         {
         }
 
+        public virtual DbSet<UserInfo> UserInfo { get; set; }
         public virtual DbSet<Categors> Categors { get; set; }
         public virtual DbSet<ClasePer> ClasePer { get; set; }
         public virtual DbSet<Cuerpos> Cuerpos { get; set; }
@@ -29,6 +30,7 @@ namespace API_ProyectoFinal.Models
         public virtual DbSet<VNivOrg> VNivOrg { get; set; }
         public virtual DbSet<VTrabajadores> VTrabajadores { get; set; }
 
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -39,6 +41,41 @@ namespace API_ProyectoFinal.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<UserInfo>(entity =>
+            {
+                entity.HasKey(e => e.UserId)
+                    .HasName("PK__UserInfo__1788CC4CE81A3218");
+
+                entity.Property(e => e.CreatedDate)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.Email)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.FirstName)
+                    .IsRequired()
+                    .HasMaxLength(30)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.LastName)
+                    .IsRequired()
+                    .HasMaxLength(30)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Password)
+                    .IsRequired()
+                    .HasMaxLength(20)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.UserName)
+                    .IsRequired()
+                    .HasMaxLength(30)
+                    .IsUnicode(false);
+            });
+
             modelBuilder.Entity<Categors>(entity =>
             {
                 entity.HasKey(e => e.Categori);

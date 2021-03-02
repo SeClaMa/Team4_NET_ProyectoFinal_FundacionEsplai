@@ -14,6 +14,10 @@ using AutoMapper;
 using API_ProyectoFinal.Models;
 using Microsoft.EntityFrameworkCore;
 
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
 namespace API_ProyectoFinal
 {
     public class Startup
@@ -32,6 +36,22 @@ namespace API_ProyectoFinal
             services.AddDbContextPool<BootcampDBContext>(options => options.UseSqlServer(connection));
 
             services.AddControllers();
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
+                options.RequireHttpsMetadata = false;
+                options.SaveToken = true;
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidAudience = Configuration["Jwt:Audience"],
+                    ValidIssuer = Configuration["Jwt:Issuer"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
+
+                };
+
+            });
 
             services.AddAutoMapper(typeof(Startup));
 
@@ -56,6 +76,8 @@ namespace API_ProyectoFinal
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
