@@ -9,10 +9,11 @@ using API_ProyectoFinal.Models;
 using API_ProyectoFinal.DTO;
 using System.Linq.Expressions;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore;
 
 namespace API_ProyectoFinal.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class TrabajadoresController : ControllerBase
@@ -24,6 +25,21 @@ namespace API_ProyectoFinal.Controllers
             _context = context;
         }
 
+        private static readonly Expression<Func<Trabajadores, TrabajadoresBuscaDTO>> AsTrabajadoresBuscaDTO =
+            b => new TrabajadoresBuscaDTO
+            {
+                Id = b.IdTrabajador,
+                Apellido1 = b.Apellido1,
+                Apellido2 = b.Apellido2,
+                Nombre = b.Nombre,
+                Cuerpo = b.CuerpoNavigation.Descrip,
+                Grupo = b.GrupoNavigation.Grupo,
+                Categoria = b.IdCategoriaNavigation.Descrip,
+                TipoEmpleado = b.TProvisNavigation.Descrip,
+                TP = b.TProvisNavigation.IdClasePer,
+                Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.DEmpresa
+            };
+
         // GET: api/Trabajadores
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Trabajadores>>> GetTrabajadores()
@@ -32,27 +48,34 @@ namespace API_ProyectoFinal.Controllers
 
         }
 
-       [HttpGet("all")]
+        [HttpGet("/Trabajadores/Cuerpo/{nombre}")]
+        public IQueryable<TrabajadoresBuscaDTO> GetTrabajadoresBusca(string nombre)
+        {
+            return _context.Trabajadores.Where(e => e.Cuerpo == nombre)
+                .Select(AsTrabajadoresBuscaDTO);
+        }
+
+        [HttpGet("all")]
         public IQueryable<TrabajadoresDTO> GetTrabajadoresAll()
         {
             var trabajadores = from b in _context.Trabajadores
-                        select new TrabajadoresDTO()
-                        {
-                            Id = b.IdTrabajador,
-                            Apellido1 = b.Apellido1,
-                            Apellido2 = b.Apellido2,
-                            Nombre = b.Nombre,
-                            Cuerpo = b.CuerpoNavigation.Descrip,
-                            Grupo = b.GrupoNavigation.Grupo,
-                            Categoria = b.IdCategoriaNavigation.Descrip,
-                            TipoEmpleado = b.TProvisNavigation.Descrip,
-                            TP = b.TProvisNavigation.IdClasePer,
-                            Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.DEmpresa
-                        };
+                               select new TrabajadoresDTO()
+                               {
+                                   Id = b.IdTrabajador,
+                                   Apellido1 = b.Apellido1,
+                                   Apellido2 = b.Apellido2,
+                                   Nombre = b.Nombre,
+                                   Cuerpo = b.CuerpoNavigation.Descrip,
+                                   Grupo = b.GrupoNavigation.Grupo,
+                                   Categoria = b.IdCategoriaNavigation.Descrip,
+                                   TipoEmpleado = b.TProvisNavigation.Descrip,
+                                   TP = b.TProvisNavigation.IdClasePer,
+                                   Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.DEmpresa
+                               };
 
             return trabajadores;
         }
-
+       
         [HttpGet("pdf")]
         public IQueryable<TrabajadoresPdfDTO> GetTrabajadoresPDF()
         {
@@ -78,10 +101,10 @@ namespace API_ProyectoFinal.Controllers
 
             return trabajadores;
         }
-
+     
         // GET: api/Trabajadores/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Trabajadores>> GetTrabajadores(string id)
+        public async Task<ActionResult<Trabajadores>> GetTrabajadores   (string id)
         {
             var trabajadores = await _context.Trabajadores.FindAsync(id);
 
