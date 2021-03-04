@@ -9,6 +9,7 @@ var correo = "hola@hola.com";
 var pass = "Hola_123";
 
 
+
 //POST de token
 function ajaxLogin(url, method, correo, pass) {
     fetch(url,
@@ -74,17 +75,28 @@ function TrabajadoresCompleto() {
             pageable: true,
             columns: [{
                 field: "id",
-                title: "Id"
+                title: "Id",
+                width: "80px"
             },
             {
+                field: "Foto",
+                template: "<img class=\'imgRedonda\' src='../fotos_empleado/#:id#.png' width=50px  onerror=\"this.onerror = null; this.src = '../fotos_empleado/neutro.png';\">",
+                width: "80px"
+            }
+                ,
+            {
                 //field: "apellido1",
+                field: "apellido1",
                 title: "Trabajador/a",
                 template: "#= apellido1 + ' ' + apellido2 + ', ' + nombre #"
             }
                 ,
             {
+                //field: "tp",
                 field: "tp",
-                title: "TP", width: "50px"
+                title: "TP",
+                width: "70px",
+                template: "<div class='texto_tipo_puesto'>#: tp #</div>",
             },
             {
                 field: "tipoEmpleado",
@@ -92,7 +104,9 @@ function TrabajadoresCompleto() {
             },
             {
                 field: "grupo",
-                title: "Grupo", width: "50px"
+                title: "Grupo",
+                template: "<div class='fondoRedondo'>#: grupo #</div>",
+                width: "70px"
             },
             {
                 field: "cuerpo",
@@ -101,10 +115,23 @@ function TrabajadoresCompleto() {
             {
                 field: "categoria",
                 title: "Categoria"
+            },
+            {
+                field: "",
+                template: "<a href='' class='boton_pdf'>PDF</a>",
+                width: "70px"
             }
             ]
         });
     });
+}
+
+
+function Error_Cargar() {
+    //document.getElementById('photo').src = "../fotos_empleado/neutro.png";
+    //window.event.srcElement.url = "../fotos_empleado/neutro.png";
+    window.event.srcElement.url.displayValues = "../fotos_empleado/neutro.png";
+    //window.event.srcElement.dis
 }
 
 function FiltroCuerpo(nom) {
@@ -149,17 +176,28 @@ function FiltroCuerpo(nom) {
             pageable: true,
             columns: [{
                 field: "id",
-                title: "Id"
+                title: "Id",
+                width: "80px"
             },
             {
+                field: "Foto",
+                template: "<img class=\'imgRedonda\' src='../fotos_empleado/#:id#.png' width=50px  onerror=\"this.onerror = null; this.src = '../fotos_empleado/neutro.png';\">",
+                width: "80px"
+            }
+                ,
+            {
                 //field: "apellido1",
+                field: "apellido1",
                 title: "Trabajador/a",
                 template: "#= apellido1 + ' ' + apellido2 + ', ' + nombre #"
             }
                 ,
             {
+                //field: "tp",
                 field: "tp",
-                title: "TP", width: "50px"
+                title: "TP",
+                width: "70px",
+                template: "<div class='texto_tipo_puesto'>#: tp #</div>",
             },
             {
                 field: "tipoEmpleado",
@@ -167,7 +205,9 @@ function FiltroCuerpo(nom) {
             },
             {
                 field: "grupo",
-                title: "Grupo", width: "50px"
+                title: "Grupo",
+                template: "<div class='fondoRedondo'>#: grupo #</div>",
+                width: "70px"
             },
             {
                 field: "cuerpo",
@@ -176,6 +216,11 @@ function FiltroCuerpo(nom) {
             {
                 field: "categoria",
                 title: "Categoria"
+            },
+            {
+                field: "",
+                template: "<a href='' class='boton_pdf'>PDF</a>",
+                width: "70px"
             }
             ]
         });
@@ -187,7 +232,7 @@ function FiltroCuerpo(nom) {
 
 function Cuerpos() {
     $.ajax({
-        url: "https://localhost:44365/api/Cuerpos",
+        url: "https://localhost:44365/api/Cuerpos?sort=descrip",
         method: 'GET',
         dataType: 'json',
         headers: {
@@ -224,3 +269,4 @@ function displayValues(stored_datas) {
         document.getElementById("cuerpos").innerHTML += "<button class='btnn' onclick=\"FiltroCuerpo('" + i.cuerpo + "');\"><i class='bi bi-building'></i >" + i.descrip + "</button>";
     })
 }
+

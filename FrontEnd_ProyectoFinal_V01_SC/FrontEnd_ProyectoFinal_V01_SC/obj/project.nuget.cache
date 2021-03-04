@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "t9Gn+Aaq1beLzX/HzVNDwgwgc34mdsM6aXQOvT3Gg+pUW25PfjVK1ZOHTu0eebfnAkVLX8s+mggKQqM4ZHbx5Q==",
+  "dgSpecHash": "eEra7x3KuVCLEy9eBzNGBkcZf1DtIl3ZXK6kDj+QgApmktrmsk00UoDF7a9sg0JzqQnYlVOa1AskNIBmv7hR1Q==",
   "success": true,
   "projectFilePath": "D:\\Tic Curso Net\\PROYECTO_FINAL\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC.csproj",
   "expectedPackageFiles": [
@@ -174,7 +174,10 @@
     "C:\\Users\\Cantore\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Cantore\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Cantore\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Cantore\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\Cantore\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Cantore\\.nuget\\packages\\telerik.documents.core.trial\\2021.1.222\\telerik.documents.core.trial.2021.1.222.nupkg.sha512",
+    "C:\\Users\\Cantore\\.nuget\\packages\\telerik.documents.fixed.trial\\2021.1.222\\telerik.documents.fixed.trial.2021.1.222.nupkg.sha512",
+    "C:\\Users\\Cantore\\.nuget\\packages\\telerik.zip.trial\\2021.1.222\\telerik.zip.trial.2021.1.222.nupkg.sha512"
   ],
   "logs": []
 }

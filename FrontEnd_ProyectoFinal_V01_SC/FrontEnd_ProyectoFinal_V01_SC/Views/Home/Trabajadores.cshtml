@@ -4,8 +4,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
-
 <!-- Container -->
 <div class="container">
     <!-- Noticia -->
@@ -14,20 +12,20 @@
             <div class="row">
                 <div class="col">
                     <div class="centrar">
-                        <!--<i class="bi bi-list"></i>-->  
+                        <!--<i class="bi bi-list"></i>-->
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Trabajadores">Trabajadores</a>
                     </div>
                 </div>
                 <div class="col">
                     <div class="float-end">
-                        <button type="button" class="btn btn-outline-primary">
+                        <button type="button" class="btn btn-outline-primary" id="pdfbtn">
                             <i class="bi bi-calendar-event"></i>
                             17 diciembre 2020
-                        </button>
+                        </button>                    
                         <button type="button" class="btn btn-outline-primary">
                             <i class="bi bi-people"></i>
                             Grupo Castilla (No tocar)
-                        </button>
+                        </button>                    
                     </div>
                 </div>
             </div>
@@ -52,8 +50,8 @@
             <!-- Aside footer -->
             <div class="row">
                 <div class="aside-footer">
-                    <i class="bi bi-question-circle" style="font-size: 2rem;"></i>
-                    <i class="bi bi-globe" style="font-size: 2rem;"></i>
+                    <i class="bi bi-question-circle" style="font-size: 1.5rem;"></i>
+                    <i class="bi bi-globe" style="font-size: 1.5rem;"></i>
                 </div>
             </div>
         </div>
@@ -62,18 +60,22 @@
         <div class="col col-10">
             <div class="row superior_derecha">
                 <div class="col d-flex flex-row-reverse bd-highlight">
-                    <div class="p-2 bd-highlight"><i class="bi bi-grid-3x3-gap-fill" style="font-size: 2rem;"></i></div>
-                    <div class="p-2 bd-highlight"><i class="bi bi-download" style="font-size: 2rem;"></i></div>
-                    <div class="p-2 bd-highlight"><i class="bi bi-search" style="font-size: 2rem;"></i></div>
+                    <div class="p-2 bd-highlight"><i class="bi bi-grid-3x3-gap-fill" style="font-size: 1.5rem;"></i></div>
+                    <div class="p-2 bd-highlight"><i class="bi bi-download" style="font-size: 1.5rem;"></i></div>
+                    <div class="p-2 bd-highlight"><i class="bi bi-search" style="font-size: 1.5rem;"></i></div>
                 </div>
             </div>
+
             <div class="row" id="trabajadores">
 
-                <div id="resultados2" style="padding: 0;" class="customClass"></div>
+                <div id="resultados2" style="padding: 0;" class="customClass">
+
+                </div>
             </div>
         </div>
     </div>
     <!-- End Aside + Center-->
 </div>
+
 
 

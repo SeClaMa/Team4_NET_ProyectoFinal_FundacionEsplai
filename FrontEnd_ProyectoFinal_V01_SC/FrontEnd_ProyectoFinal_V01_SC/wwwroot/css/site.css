@@ -231,3 +231,48 @@ div#leftIc {
     background: yellow;
 }
 
+.texto_tipo_puesto {
+    font-weight: 400;
+    color: white;
+    background: #63A2B0;
+    overflow: hidden;
+    padding: 5px;
+    width: 20px;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    text-align: center;
+}
+
+.imgRedonda {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 3px solid #666;
+}
+
+.fondoRedondo {
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    width: 20px;
+    border-radius: 50px;
+}
+
+.boton_pdf {
+    font-size: 10px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: rgb(25, 25, 136);
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+    .boton_pdf:hover {
+        color: #ffffff;
+        background-color: #3a3af1;
+        text-decoration: none;
+    }
+
