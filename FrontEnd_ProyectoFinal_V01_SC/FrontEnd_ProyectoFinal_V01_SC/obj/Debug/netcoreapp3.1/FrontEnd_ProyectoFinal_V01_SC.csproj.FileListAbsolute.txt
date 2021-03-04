@@ -75,7 +75,6 @@ D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoF
 D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\FrontEnd_ProyectoFinal_V01_SC.TagHelpers.output.cache
 D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\FrontEnd_ProyectoFinal_V01_SC.RazorCoreGenerate.cache
 D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -201,8 +200,6 @@ D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoF
 D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Trabajadores.cshtml.g.cs
-D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\Razor\Views\Empresas\Empresas.cshtml.g.cs
-D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\Razor\Views\Categorias\Categorias.cshtml.g.cs
 C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_NET_ProyectoFinal_FundacionEsplai\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_NET_ProyectoFinal_FundacionEsplai\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_NET_ProyectoFinal_FundacionEsplai\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\bin\Debug\netcoreapp3.1\FrontEnd_ProyectoFinal_V01_SC.StaticWebAssets.xml

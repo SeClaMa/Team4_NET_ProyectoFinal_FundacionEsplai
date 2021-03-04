@@ -72,9 +72,10 @@ namespace FrontEnd_ProyectoFinal_V01_SC
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Trabajadores}/{id?}");
                 endpoints.MapRazorPages();
             });
+
         }
     }
 }

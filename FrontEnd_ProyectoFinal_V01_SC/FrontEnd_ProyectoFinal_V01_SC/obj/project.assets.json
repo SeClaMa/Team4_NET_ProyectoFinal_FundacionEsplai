@@ -9136,7 +9136,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Cantore\\.nuget\\packages\\": {}
+    "C:\\Users\\Cantore\\.nuget\\packages\\": {},
+    "D:\\Herramientas\\Telerik\\ToolboxNuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -9147,16 +9148,22 @@
       "packagesPath": "C:\\Users\\Cantore\\.nuget\\packages\\",
       "outputPath": "D:\\Tic Curso Net\\PROYECTO_FINAL\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Herramientas\\Telerik\\ToolboxNuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\Cantore\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WinForms.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.telerik.com/nuget": {}
       },
       "frameworks": {
         "netcoreapp3.1": {

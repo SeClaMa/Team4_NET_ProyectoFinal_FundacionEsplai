@@ -2,7 +2,8 @@
   "runtimeOptions": {
     "additionalProbingPaths": [
       "C:\\Users\\Cantore\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Cantore\\.nuget\\packages"
+      "C:\\Users\\Cantore\\.nuget\\packages",
+      "D:\\Herramientas\\Telerik\\ToolboxNuGetPackages"
     ]
   }
 }
