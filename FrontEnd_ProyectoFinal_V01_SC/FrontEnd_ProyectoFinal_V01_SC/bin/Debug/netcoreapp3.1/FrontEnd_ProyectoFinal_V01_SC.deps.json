@@ -30,7 +30,6 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.12",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.12",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.5",
-          "Telerik.Documents.Fixed.Trial": "2021.1.222",
           "bootstrap": "4.6.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -2343,46 +2342,6 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XmlDocument": "4.3.0"
-        }
-      },
-      "Telerik.Documents.Core.Trial/2021.1.222": {
-        "dependencies": {
-          "Telerik.Zip.Trial": "2021.1.222"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Telerik.Documents.Core.dll": {
-            "assemblyVersion": "2021.1.222.20",
-            "fileVersion": "2021.1.222.20"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.0/Telerik.Documents.Core.dll": {}
-        }
-      },
-      "Telerik.Documents.Fixed.Trial/2021.1.222": {
-        "dependencies": {
-          "Telerik.Documents.Core.Trial": "2021.1.222",
-          "Telerik.Zip.Trial": "2021.1.222"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Telerik.Documents.Fixed.dll": {
-            "assemblyVersion": "2021.1.222.20",
-            "fileVersion": "2021.1.222.20"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.0/Telerik.Documents.Fixed.dll": {}
-        }
-      },
-      "Telerik.Zip.Trial/2021.1.222": {
-        "runtime": {
-          "lib/netstandard2.0/Telerik.Zip.dll": {
-            "assemblyVersion": "2021.1.222.20",
-            "fileVersion": "2021.1.222.20"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.0/Telerik.Zip.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -5167,27 +5126,6 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
-    },
-    "Telerik.Documents.Core.Trial/2021.1.222": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lSVlKNVbDJsQ+8nyN6aRShqZ8e9MYWbb3ruUsS1DujjVHdjoCFGyq08rS0QuQbxrMDBYlRinR6YQEhFZ8gdwfA==",
-      "path": "telerik.documents.core.trial/2021.1.222",
-      "hashPath": "telerik.documents.core.trial.2021.1.222.nupkg.sha512"
-    },
-    "Telerik.Documents.Fixed.Trial/2021.1.222": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-wzBFzIHAbrsiT8EMJyHTpJ5PTGTm5jpTyANhE9yZuPCuur/DjqyNrslh66du0iiVoU/5QLtXVTDoKajOuXaB3Q==",
-      "path": "telerik.documents.fixed.trial/2021.1.222",
-      "hashPath": "telerik.documents.fixed.trial.2021.1.222.nupkg.sha512"
-    },
-    "Telerik.Zip.Trial/2021.1.222": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-WaM+cAO6xAvyHhVIxabzrwKqUQTjkXMBDdOQK18qIrjMyinoSnhL69fQTuZQ2cMYj6geS2kD3hzVaWDuXze+sQ==",
-      "path": "telerik.zip.trial/2021.1.222",
-      "hashPath": "telerik.zip.trial.2021.1.222.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",

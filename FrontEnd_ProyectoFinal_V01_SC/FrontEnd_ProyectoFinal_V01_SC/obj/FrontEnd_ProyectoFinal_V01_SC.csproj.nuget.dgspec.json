@@ -72,10 +72,6 @@
               "target": "Package",
               "version": "[3.1.5, )"
             },
-            "Telerik.Documents.Fixed.Trial": {
-              "target": "Package",
-              "version": "[2021.1.222, )"
-            },
             "bootstrap": {
               "target": "Package",
               "version": "[4.6.0, )"

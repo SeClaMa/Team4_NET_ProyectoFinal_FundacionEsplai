@@ -2825,40 +2825,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "Telerik.Documents.Core.Trial/2021.1.222": {
-        "type": "package",
-        "dependencies": {
-          "Telerik.Zip.Trial": "[2021.1.222]"
-        },
-        "compile": {
-          "lib/netstandard2.0/Telerik.Documents.Core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Telerik.Documents.Core.dll": {}
-        }
-      },
-      "Telerik.Documents.Fixed.Trial/2021.1.222": {
-        "type": "package",
-        "dependencies": {
-          "Telerik.Documents.Core.Trial": "[2021.1.222]",
-          "Telerik.Zip.Trial": "[2021.1.222]"
-        },
-        "compile": {
-          "lib/netstandard2.0/Telerik.Documents.Fixed.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Telerik.Documents.Fixed.dll": {}
-        }
-      },
-      "Telerik.Zip.Trial/2021.1.222": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Telerik.Zip.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Telerik.Zip.dll": {}
-        }
       }
     }
   },
@@ -9156,60 +9122,6 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
-    },
-    "Telerik.Documents.Core.Trial/2021.1.222": {
-      "sha512": "lSVlKNVbDJsQ+8nyN6aRShqZ8e9MYWbb3ruUsS1DujjVHdjoCFGyq08rS0QuQbxrMDBYlRinR6YQEhFZ8gdwfA==",
-      "type": "package",
-      "path": "telerik.documents.core.trial/2021.1.222",
-      "files": [
-        ".nupkg.metadata",
-        "LicenseAgreements/EULA.txt",
-        "LicenseAgreements/ThirdParty/AutoIt.txt",
-        "LicenseAgreements/ThirdParty/Progress Telerik UI for Silverlight - notices.txt",
-        "LicenseAgreements/ThirdParty/Progress Telerik UI for WPF - notices.txt",
-        "LicenseAgreements/ThirdParty/SpecFlow.txt",
-        "images/tdp.png",
-        "lib/netstandard2.0/Telerik.Documents.Core.dll",
-        "lib/netstandard2.0/Telerik.Documents.Core.xml",
-        "telerik.documents.core.trial.2021.1.222.nupkg.sha512",
-        "telerik.documents.core.trial.nuspec"
-      ]
-    },
-    "Telerik.Documents.Fixed.Trial/2021.1.222": {
-      "sha512": "wzBFzIHAbrsiT8EMJyHTpJ5PTGTm5jpTyANhE9yZuPCuur/DjqyNrslh66du0iiVoU/5QLtXVTDoKajOuXaB3Q==",
-      "type": "package",
-      "path": "telerik.documents.fixed.trial/2021.1.222",
-      "files": [
-        ".nupkg.metadata",
-        "LicenseAgreements/EULA.txt",
-        "LicenseAgreements/ThirdParty/AutoIt.txt",
-        "LicenseAgreements/ThirdParty/Progress Telerik UI for Silverlight - notices.txt",
-        "LicenseAgreements/ThirdParty/Progress Telerik UI for WPF - notices.txt",
-        "LicenseAgreements/ThirdParty/SpecFlow.txt",
-        "images/tdp.png",
-        "lib/netstandard2.0/Telerik.Documents.Fixed.dll",
-        "lib/netstandard2.0/Telerik.Documents.Fixed.xml",
-        "telerik.documents.fixed.trial.2021.1.222.nupkg.sha512",
-        "telerik.documents.fixed.trial.nuspec"
-      ]
-    },
-    "Telerik.Zip.Trial/2021.1.222": {
-      "sha512": "WaM+cAO6xAvyHhVIxabzrwKqUQTjkXMBDdOQK18qIrjMyinoSnhL69fQTuZQ2cMYj6geS2kD3hzVaWDuXze+sQ==",
-      "type": "package",
-      "path": "telerik.zip.trial/2021.1.222",
-      "files": [
-        ".nupkg.metadata",
-        "LicenseAgreements/EULA.txt",
-        "LicenseAgreements/ThirdParty/AutoIt.txt",
-        "LicenseAgreements/ThirdParty/Progress Telerik UI for Silverlight - notices.txt",
-        "LicenseAgreements/ThirdParty/Progress Telerik UI for WPF - notices.txt",
-        "LicenseAgreements/ThirdParty/SpecFlow.txt",
-        "images/tdp.png",
-        "lib/netstandard2.0/Telerik.Zip.dll",
-        "lib/netstandard2.0/Telerik.Zip.xml",
-        "telerik.zip.trial.2021.1.222.nupkg.sha512",
-        "telerik.zip.trial.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -9220,7 +9132,6 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.12",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.12",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5",
-      "Telerik.Documents.Fixed.Trial >= 2021.1.222",
       "bootstrap >= 4.6.0"
     ]
   },
@@ -9295,10 +9206,6 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[3.1.5, )"
-          },
-          "Telerik.Documents.Fixed.Trial": {
-            "target": "Package",
-            "version": "[2021.1.222, )"
           },
           "bootstrap": {
             "target": "Package",

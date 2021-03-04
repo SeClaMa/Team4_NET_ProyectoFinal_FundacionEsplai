@@ -405,6 +405,3 @@ C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_NET_ProyectoFinal_FundacionE
 C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_NET_ProyectoFinal_FundacionEsplai\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\FrontEnd_ProyectoFinal_V01_SC.dll
 C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_NET_ProyectoFinal_FundacionEsplai\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\FrontEnd_ProyectoFinal_V01_SC.pdb
 C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_NET_ProyectoFinal_FundacionEsplai\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\obj\Debug\netcoreapp3.1\FrontEnd_ProyectoFinal_V01_SC.genruntimeconfig.cache
-D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\bin\Debug\netcoreapp3.1\Telerik.Documents.Core.dll
-D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\bin\Debug\netcoreapp3.1\Telerik.Documents.Fixed.dll
-D:\Tic Curso Net\PROYECTO_FINAL\FrontEnd_ProyectoFinal_V01_SC\FrontEnd_ProyectoFinal_V01_SC\bin\Debug\netcoreapp3.1\Telerik.Zip.dll
