@@ -24,7 +24,7 @@ namespace API_ProyectoFinal.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cuerpos>>> GetCuerpos()
         {
-            return await _context.Cuerpos.ToListAsync();
+            return await _context.Cuerpos.OrderBy(d => d.Descrip).ToListAsync();
         }
 
         // GET: api/Cuerpos/5
