@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewData["Title"] = "Trabajadores";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Container -->
+<div class="row">
+    <div class="col-md-auto">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="current">
+                    <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Trabajadores">
+                        <i class="bi bi-people-fill" style="font-size: 1.5rem;"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-tag" style="font-size: 1.5rem;"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-display" style="font-size: 1.5rem;"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-briefcase" style="font-size: 1.5rem;"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-bookmark-check" style="font-size: 1.5rem;"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-diagram-3" style="font-size: 1.5rem;"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-pie-chart" style="font-size: 1.5rem;"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-auto">
+
+        <!-- Noticia -->
+        <div class="row pdd">
+            <div class="col noticia">
+                <div class="row">
+                    <div class="col">
+                        <div class="centrar">
+                            <!--<i class="bi bi-list"></i>-->
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Trabajadores">Trabajadores</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="float-right">
+                            <button type="button" class="btn btn-outline-primary">
+                                <i class="bi bi-calendar-event"></i>
+                                17 diciembre 2020
+                            </button>
+                            <button type="button" class="btn btn-outline-primary">
+                                <i class="bi bi-people"></i>
+                                Grupo Castilla (No tocar)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Aside + Center -->
+        <div class="row pdd">
+            <!-- Aside -->
+            <div class="col col-2 panel-izquierda">
+                <br>
+                <div class="mb-3">
+                    <span class="border-bottm">
+                        <input type="text" class="border-0 inptext" placeholder="Filtrar unidad organizativa">
+                    </span>
+                    <i class="bi bi-funnel"></i>
+                </div>
+                <div id="cuerpos"></div>
+                <hr class="4">
+
+                <!-- Aside footer -->
+                <div class="row">
+                    <div class="aside-footer">
+                        <i class="bi bi-question-circle" style="font-size: 2rem;"></i>
+                        <i class="bi bi-globe" style="font-size: 2rem;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section -->
+            <div class="col col-10">
+                <div class="row superior_derecha">
+                    <div class="col d-flex flex-row-reverse bd-highlight">
+                        <div class="p-2 bd-highlight"><i class="bi bi-grid-3x3-gap-fill" style="font-size: 2rem;"></i></div>
+                        <div class="p-2 bd-highlight"><i class="bi bi-download" style="font-size: 2rem;"></i></div>
+                        <div class="p-2 bd-highlight"><i class="bi bi-search" style="font-size: 2rem;"></i></div>
+                    </div>
+                </div>
+                <div class="row" id="trabajadores">
+
+                    <div id="resultados2" style="padding: 0;" class="customClass"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End Aside + Center-->
+    </div>
+</div>
+
+
