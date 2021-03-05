@@ -37,7 +37,8 @@ namespace API_ProyectoFinal.Controllers
                 Categoria = b.IdCategoriaNavigation.Descrip,
                 TipoEmpleado = b.TProvisNavigation.Descrip,
                 TP = b.TProvisNavigation.IdClasePer,
-                Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.DEmpresa
+                Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.DEmpresa,
+                Clave = b.Id
             };
 
         private static readonly Expression<Func<Trabajadores, TrabajadoresPdfDTO>> AsTrabajadoresPdfDTO =
@@ -90,22 +91,23 @@ namespace API_ProyectoFinal.Controllers
                                    Categoria = b.IdCategoriaNavigation.Descrip,
                                    TipoEmpleado = b.TProvisNavigation.Descrip,
                                    TP = b.TProvisNavigation.IdClasePer,
-                                   Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.DEmpresa
+                                   Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.DEmpresa,
+                                   Clave = b.Id
                                };
 
             return trabajadores;
         }
        
         [HttpGet("pdf/{id}")]
-        public IQueryable<TrabajadoresPdfDTO> GetTrabajadoresPDF(string id)
+        public IQueryable<TrabajadoresPdfDTO> GetTrabajadoresPDF(int id)
         {
-            return _context.Trabajadores.Where(e => e.IdTrabajador == id)
+            return _context.Trabajadores.Where(e => e.Id == id)
                  .Select(AsTrabajadoresPdfDTO);
         }
      
         // GET: api/Trabajadores/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Trabajadores>> GetTrabajadores   (string id)
+        public async Task<ActionResult<Trabajadores>> GetTrabajadores (string id)
         {
             var trabajadores = await _context.Trabajadores.FindAsync(id);
 

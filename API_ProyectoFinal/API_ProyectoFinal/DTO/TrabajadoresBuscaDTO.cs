@@ -17,5 +17,6 @@ namespace API_ProyectoFinal.DTO
         public string TipoEmpleado { get; set; }
         public string TP { get; set; }
         public string Empresa { get; set; }
+        public int Clave { get; set; }
     }
 }
