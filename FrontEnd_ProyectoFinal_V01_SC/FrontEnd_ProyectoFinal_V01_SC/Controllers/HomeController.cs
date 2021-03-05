@@ -18,16 +18,6 @@ namespace FrontEnd_ProyectoFinal_V01_SC.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         public IActionResult Trabajadores()
         {
             return View();
