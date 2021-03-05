@@ -73,11 +73,16 @@ body {
 /* estilos personalizados plantilla bootstrap vista trabajadores*/
 
 
+.row{
+    margin-right: -15px;
+}
+
 .containerHead {
     background-color: rgb(25, 25, 136);
     border: rgb(4, 4, 41) 1px solid;
 }
-.container-profile{
+
+.container-profile {
     margin: auto;
     margin-left: 75px;
 }
@@ -93,7 +98,7 @@ div#leftIc {
 
 .container {
     /* margin: 0px!important; */
-    min-width: 100%;
+    margin-right: 0px !important;
 }
 
 #cajaIzquierda #menuIz {
@@ -113,20 +118,21 @@ div#leftIc {
 
 #sidebar-wrapper {
     left: 0px;
-    width: 75px;
+    /*width: 100px;*/
     background: #000;
     position: fixed;
     height: 100%;
-    top: 20px;
+    top: 0;
 }
 
 #page-content-wrapper {
     width: 100%;
 }
 
+
 .sidebar-nav {
     /* position: absolute; */
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     width: 75px;
     list-style: none;
@@ -158,8 +164,9 @@ div#leftIc {
     }
 
 .pdd {
-    padding-left: 85px;
+    padding-left: 75px;
 }
+
 
 .noticia {
     /* height: 50px; */
@@ -230,6 +237,7 @@ div#leftIc {
     color: red;
     background: yellow;
 }
+
 
 .texto_tipo_puesto {
     font-weight: 400;

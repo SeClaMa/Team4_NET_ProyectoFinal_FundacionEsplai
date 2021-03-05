@@ -9142,11 +9142,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Tic Curso Net\\PROYECTO_FINAL\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC.csproj",
+      "projectUniqueName": "D:\\Tic Curso Net\\PROYECTO_FINAL\\Backup V1\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC.csproj",
       "projectName": "FrontEnd_ProyectoFinal_V01_SC",
-      "projectPath": "D:\\Tic Curso Net\\PROYECTO_FINAL\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC.csproj",
+      "projectPath": "D:\\Tic Curso Net\\PROYECTO_FINAL\\Backup V1\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC.csproj",
       "packagesPath": "C:\\Users\\Cantore\\.nuget\\packages\\",
-      "outputPath": "D:\\Tic Curso Net\\PROYECTO_FINAL\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC\\obj\\",
+      "outputPath": "D:\\Tic Curso Net\\PROYECTO_FINAL\\Backup V1\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Herramientas\\Telerik\\ToolboxNuGetPackages"
