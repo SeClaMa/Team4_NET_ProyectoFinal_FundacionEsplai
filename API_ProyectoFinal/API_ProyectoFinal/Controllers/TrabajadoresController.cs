@@ -40,6 +40,26 @@ namespace API_ProyectoFinal.Controllers
                 Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.DEmpresa
             };
 
+        private static readonly Expression<Func<Trabajadores, TrabajadoresPdfDTO>> AsTrabajadoresPdfDTO =
+            b => new TrabajadoresPdfDTO
+            {
+                //Empresa
+                NIF_Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.Nif,
+                Nombre_Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.DEmpresa,
+                TipoVia_Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.Siglas,
+                Domicilio_Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.Domicilio,
+                Num_Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.Num,
+                CP_Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.Cpostal,
+                //Trabajador
+                Apellido1 = b.Apellido1,
+                Apellido2 = b.Apellido2,
+                Nombre = b.Nombre,
+                NIF = b.Nif,
+                FechaNac = (DateTime)b.FNac,
+                Nivel_Formativo = b.NivOrg.DNivel,
+                Municipio = b.IdPNavigation.DPoblacion
+            };
+
         // GET: api/Trabajadores
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Trabajadores>>> GetTrabajadores()
@@ -77,29 +97,10 @@ namespace API_ProyectoFinal.Controllers
         }
        
         [HttpGet("pdf")]
-        public IQueryable<TrabajadoresPdfDTO> GetTrabajadoresPDF()
+        public IQueryable<TrabajadoresPdfDTO> GetTrabajadoresPDF(string id)
         {
-            var trabajadores = from b in _context.Trabajadores
-                               select new TrabajadoresPdfDTO()
-                               {
-                                   //Empresa
-                                   NIF_Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.Nif,
-                                   Nombre_Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.DEmpresa,
-                                   TipoVia_Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.Siglas,
-                                   Domicilio_Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.Domicilio,
-                                   Num_Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.Num,
-                                   CP_Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.Cpostal,
-                                   //Trabajador
-                                   Apellido1 = b.Apellido1,
-                                   Apellido2 = b.Apellido2,
-                                   Nombre = b.Nombre,
-                                   NIF = b.Nif,
-                                   FechaNac = (DateTime)b.FNac,
-                                   Nivel_Formativo = b.NivOrg.DNivel,
-                                   Municipio = b.IdPNavigation.DPoblacion
-                               };
-
-            return trabajadores;
+            return _context.Trabajadores.Where(e => e.IdTrabajador == id)
+                 .Select(AsTrabajadoresPdfDTO);
         }
      
         // GET: api/Trabajadores/5
