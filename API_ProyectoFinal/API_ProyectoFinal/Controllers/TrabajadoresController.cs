@@ -96,7 +96,7 @@ namespace API_ProyectoFinal.Controllers
             return trabajadores;
         }
        
-        [HttpGet("pdf")]
+        [HttpGet("pdf/{id}")]
         public IQueryable<TrabajadoresPdfDTO> GetTrabajadoresPDF(string id)
         {
             return _context.Trabajadores.Where(e => e.IdTrabajador == id)
