@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TddZTIHYRMTt10YNAP64W3uKBgh2ZO9hDlrsifGdCZXziEx5uEtiNY/TtE4wgpwSqeyDoKfxX0fr5ObXWcrdVg==",
+  "dgSpecHash": "t9Gn+Aaq1beLzX/HzVNDwgwgc34mdsM6aXQOvT3Gg+pUW25PfjVK1ZOHTu0eebfnAkVLX8s+mggKQqM4ZHbx5Q==",
   "success": true,
-  "projectFilePath": "D:\\Tic Curso Net\\PROYECTO_FINAL\\Backup V1\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC.csproj",
+  "projectFilePath": "D:\\Tic Curso Net\\PROYECTO_FINAL\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC\\FrontEnd_ProyectoFinal_V01_SC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cantore\\.nuget\\packages\\bootstrap\\4.6.0\\bootstrap.4.6.0.nupkg.sha512",
     "C:\\Users\\Cantore\\.nuget\\packages\\jquery\\3.0.0\\jquery.3.0.0.nupkg.sha512",
