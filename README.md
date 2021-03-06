@@ -3,8 +3,9 @@
 
 #### 1. Description
 ```
-Demo API REST creada con .NET COre 3.1 utilizando varias entidades ER y conectada con base de datos 
-MS Sql Virtualizada sobre Fedora 32  y Virtualbox 6.1. Aplicación con fines educativos.
+API REST creada con .NET COre 3.1 utilizando varias entidades ER y conectada con base de datos 
+MS Sql Virtualizada sobre Fedora 32  y Virtualbox 6.1.
+Con un FrontEnd llevado desde ASP.NET con JavaScript, JQuery y Boostrap
 ```
 
 #### 2. Link a un demo con el proyecto desplegado: https://github.com/SeClaMa/Team4_NET_ProyectoFinal_FundacionEsplai/tree/main
