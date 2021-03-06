@@ -49,7 +49,8 @@ Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design  -Version 3.1.5
 ```
 "AllowedHosts": "*",
     "ConnectionStrings": {
-        "DatabaseConnection": "Server=192.168.0.29;Database=BootcampDB;User ID=Eric; Password=Root_1234"  //El User ID y el Password se deben introducir los correspondientes a la base de datos donde se ejecuta el proyecto, la IP del Server también puede llegar a variar.
+        "DatabaseConnection": "Server=192.168.0.29;Database=BootcampDB;User ID=Eric; Password=Root_1234"  
+        //El User ID y el Password se deben introducir los correspondientes a la base de datos donde se ejecuta el proyecto, la IP del Server también puede llegar a variar.
     }
 ```
 #### 4. URIs endpoints.
