@@ -36,14 +36,14 @@ function carga() {
 }
 
 function TrabajadoresCompleto() {
-    console.log(localStorage.getItem('token'));
     $(document).ready(function () {
         $("#resultados2").kendoGrid({
             toolbar: ["excel","pdf"],
             excel: {
+                allPages: true,
                 fileName: "Trabajdores.xlsx",
                 proxyURL: "https://demos.telerik.com/kendo-ui/service/export",
-                filterable: true
+                filterable: true               
             },
             pdf: {
                 allPages: true,
@@ -187,11 +187,26 @@ function pintar_pdf(datos_empleado) {
 
 
 function FiltroCuerpo(nom) {
-
     $("#resultados2").empty();
-    console.log(localStorage.getItem('token'));
     $(document).ready(function () {
         $("#resultados2").kendoGrid({
+            toolbar: ["excel", "pdf"],
+            excel: {
+                allPages: true,
+                fileName: "Trabajdores.xlsx",
+                proxyURL: "https://demos.telerik.com/kendo-ui/service/export",
+                filterable: true
+            },
+            pdf: {
+                allPages: true,
+                avoidLinks: true,
+                paperSize: "A4",
+                margin: { top: "2cm", left: "1cm", right: "1cm", bottom: "1cm" },
+                landscape: true,
+                repeatHeaders: true,
+                template: $("#page-template").html(),
+                scale: 0.8
+            },
             dataSource: {
                 transport: {
                     read: {
@@ -216,7 +231,8 @@ function FiltroCuerpo(nom) {
                             categoria: { type: "string" },
                             tipoEmpleado: { type: "string" },
                             tp: { type: "string" },
-                            empresa: { type: "string" }
+                            empresa: { type: "string" },
+                            clave: { type: "number" }
                         }
                     }
                 },
@@ -234,7 +250,7 @@ function FiltroCuerpo(nom) {
             {
                 field: "Foto",
                 template: "<img class=\'imgRedonda\' src='../fotos_empleado/#:id#.png' width=50px  onerror=\"this.onerror = null; this.src = '../fotos_empleado/neutro.png';\">",
-                width: "80px"
+                width: "90px"
             }
                 ,
             {
@@ -253,25 +269,29 @@ function FiltroCuerpo(nom) {
             },
             {
                 field: "tipoEmpleado",
-                title: "Tipo Empleado/a"
+                title: "Tipo Empleado/a",
+                width: "170px"
             },
             {
                 field: "grupo",
                 title: "Grupo",
                 template: "<div class='fondoRedondo'>#: grupo #</div>",
-                width: "70px"
+                width: "95px"
             },
             {
                 field: "cuerpo",
-                title: "Cuerpo"
+                title: "Cuerpo",
+                width: "130px"
             },
             {
                 field: "categoria",
-                title: "Categoria"
+                title: "Categoria",
+                width: "130px"
             },
             {
                 field: "",
-                template: "<a href='generar_pdf(#: id #);' class='boton_pdf'><i class='bi k-i-file-pdf'></i > PDF</a>",
+                // template: "<a href='' onclick=\"generar_pdf(#: id #);\"  class='boton_pdf'><i class='bi k-i-file-pdf'></i > PDF</a>",
+                template: "<a href=\"javascript:generar_pdf(#: clave #);\" class='boton_pdf'><i class='far fa-file-pdf'></i>PDF</a>",
                 width: "70px"
             }
             ]
