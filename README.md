@@ -86,39 +86,43 @@ DELETE    /api/UserInfo/{id}
 ```
 
 #### 5. Screenshot imagen que indique cómo debe verse el proyecto.
-##### Vista del Swagger de la API
+#### Vista del Swagger de la API
 En esta vista se puede ver todos los endpoints disponibles en la API.
 
 ![image](https://user-images.githubusercontent.com/11030691/110203814-79cf5580-7e70-11eb-9d73-3e92e4f45252.png)
 
-##### Vista del login de la aplicación
+#### Vista del login de la aplicación
 En esta vista se puede ver como se logearian los usuarios que tengan cuenta en la aplicación.
 
 ![image](https://user-images.githubusercontent.com/11030691/110204630-5c03ef80-7e74-11eb-9fe6-b0b27bd707a9.png)
 
-##### Vista del registro de la aplicación
+#### Vista del registro de la aplicación
 En esta vista se puede ver como se registraria un usuario que no tiene cuenta en la aplicación, para registrarse se necesita que la contraseña contenga una mayuscula, una minúscula, un carácter especial, un número y tiene que tener como mínimo 8 carácteres.
 
 ![image](https://user-images.githubusercontent.com/11030691/110204689-a8e7c600-7e74-11eb-870f-a304d4224e82.png)
 
-##### Vista del interior de la aplicación una vez logeado el usuario
+#### Vista del interior de la aplicación una vez logeado el usuario
 En esta vista se puede ver la tabla de trabajadores, en esta tabla se muestran los campos de ID, Foto, Trabajador/a, TP, Tipo Empleado/a, Grupo, Cuerpo y Categoria. A partir de esta vista se puede hacer que se muestren los trabajadores según el cuerpo donde hay de 7 tipos: Administrativos, Bomberos, Educación, Justicia, Personal militar, Policias y Seguridad municipal.
 
 ![image](https://user-images.githubusercontent.com/11030691/110221617-833adb00-7ecd-11eb-8b97-ead969bdd0b2.png)
 
-##### Vista del interior de la aplicación con el filtro por el atributo Cuerpo
+#### Vista del interior de la aplicación con el filtro por el atributo Cuerpo
 En esta vista se puede ver la tabla de trabajadores con un filtrado por el atributo Cuerpo, donde se muestran solo los trabajadores que tengan el campo Cuerpo que el usuario seleccione.
+
 ![image](https://user-images.githubusercontent.com/11030691/110221659-d0b74800-7ecd-11eb-96dc-7bd0cafd6aff.png)
 
-##### PDF de la tabla de todos los trabajadores
+#### PDF de la tabla de todos los trabajadores
 PDF generado automáticamente de la tabla de trabajadores.
+
 ![image](https://user-images.githubusercontent.com/11030691/110221729-3efc0a80-7ece-11eb-9dd1-fdefee627cc2.png)
 
-##### Excel de la tabla de todos los trabajadores
+#### Excel de la tabla de todos los trabajadores
 Excel generado automáticamente de la tabla de trabajadores.
+
 ![image](https://user-images.githubusercontent.com/11030691/110221709-1ecc4b80-7ece-11eb-80d9-06ebf0e2b921.png)
 
-##### Contrato SEPE de un trabajador
+#### Contrato SEPE de un trabajador
 Contrato del SEPE creado de un trabajador y rellenado automáticamente con el contenido de la base de datos de dicho trabajador.
+
 ![image](https://user-images.githubusercontent.com/11030691/110221679-f04e7080-7ecd-11eb-9af7-3343c2d4b067.png)
 
