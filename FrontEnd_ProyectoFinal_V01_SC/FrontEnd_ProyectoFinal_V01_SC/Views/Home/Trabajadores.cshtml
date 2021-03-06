@@ -4,6 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
 <!-- Container -->
 <div class="row">
     <div class="col-md-auto">
@@ -47,9 +48,8 @@
                     </div>
                     <div class="col">
                         <div class="float-right">
-                            <button type="button" class="btn btn-outline-primary" id="pdfbtn">
-                                <i class="bi bi-calendar-event"></i>
-                                17 diciembre 2020
+                            <button type="button" class="btn btn-outline-primary">
+                                <i class="bi bi-calendar-event" id="fechaAct"></i>
                             </button>
                             <button type="button" class="btn btn-outline-primary">
                                 <i class="bi bi-people"></i>
@@ -68,20 +68,17 @@
             <div class="col col-2 panel-izquierda">
                 <br>
                 <div class="mb-3">
-                    <span class="border-bottm">
-                        <input type="text" class="border-0 inptext" placeholder="Filtrar unidad organizativa">
-                    </span>
-                    <i class="bi bi-funnel"></i>
+                    <h3>Cuerpos</h3>
                 </div>
                 <div id="cuerpos"></div>
                 <hr class="4">
                 <!-- Aside footer -->
-                <div class="row">
+                
                     <div class="aside-footer">
                         <i class="bi bi-question-circle" style="font-size: 1.5rem;"></i>
                         <i class="bi bi-globe" style="font-size: 1.5rem;"></i>
                     </div>
-                </div>
+               
             </div>
 
             <!-- Section -->

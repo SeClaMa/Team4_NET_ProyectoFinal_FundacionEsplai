@@ -3,7 +3,7 @@
 
 // Write your JavaScript code.
 
-
+//Variables de Token
 var text1 = [];
 var correo = "hola@hola.com";
 var pass = "Hola_123";
@@ -28,13 +28,68 @@ function ajaxLogin(url, method, correo, pass) {
             localStorage.setItem('token', token);
         });
 }
+//Token llevado
 window.addEventListener('load', ajaxLogin('https://localhost:44365/api/Token', 'POST', correo, pass));
 
+//Carga de Funciones
 function carga() {
     TrabajadoresCompleto();
     Cuerpos();
+    fechaActual();
 }
 
+//Funcion de fecha
+function fechaActual() {
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //Enero es 0!
+    var yyyy = today.getFullYear();
+    switch (mm) {
+        case "01":
+            mm = "Enero";
+            break;
+        case "02":
+            mm = "Febrero";
+            break;
+        case "03":
+            mm = "Marzo";
+            break;
+        case "04":
+            mm = "Abril";
+            break;
+        case "05":
+            mm = "Mayo";
+            break;
+        case "06":
+            mm = "Junio";
+            break;
+        case "07":
+            mm = "Julio";
+            break;
+        case "08":
+            mm = "Agosto";
+            break;
+        case "09":
+            mm = "Septiembre";
+            break;
+        case "10":
+            mm = "Octubre";
+            break;
+        case "11":
+            mm = "Noviembre";
+            break;
+        case "12":
+            mm = "Diciembre";
+            break;
+        default:
+
+            break;
+    }
+    today =' '+ dd + ' de ' + mm + ' de ' + yyyy;
+    document.getElementById("fechaAct").innerHTML = today;
+}
+
+//Funcion de API a Trabajadores
 function TrabajadoresCompleto() {
     $(document).ready(function () {
         $("#resultados2").kendoGrid({
@@ -84,9 +139,9 @@ function TrabajadoresCompleto() {
                         }
                     }
                 },
-                pageSize: 20
+                pageSize: 15
             },
-            height: 550,
+            height: 800,
             filterable: true,
             sortable: true,
             pageable: true,
@@ -147,6 +202,8 @@ function TrabajadoresCompleto() {
     });
 }
 
+//Funcion para generar PDF
+
 function generar_pdf(empleado) {
     $.ajax({
         url: "https://localhost:44365/api/Trabajadores/pdf/" + empleado,
@@ -175,6 +232,7 @@ function generar_pdf(empleado) {
     })
 }
 
+//Funcion para Pintar el PDF
 function pintar_pdf(datos_empleado) {
     var doc = new jsPDF();
 
@@ -185,7 +243,7 @@ function pintar_pdf(datos_empleado) {
     
 }
 
-
+//Funcion para filtrar Cuerpos
 function FiltroCuerpo(nom) {
     $("#resultados2").empty();
     $(document).ready(function () {
@@ -236,9 +294,9 @@ function FiltroCuerpo(nom) {
                         }
                     }
                 },
-                pageSize: 20
+                pageSize: 15
             },
-            height: 550,
+            height: 800,
             filterable: true,
             sortable: true,
             pageable: true,
@@ -301,7 +359,7 @@ function FiltroCuerpo(nom) {
 
 
 
-
+//Funcion de API para trear los cuerpos
 function Cuerpos() {
     $.ajax({
         url: "https://localhost:44365/api/Cuerpos",
@@ -330,15 +388,15 @@ function Cuerpos() {
     })
 }
 
+
 function displayValues(stored_datas) {
-    console.log(stored_datas);
     //var x = localStorage.getItem("datas");
 
 
     stored_datas.forEach((i) => {
         //var html = document.getElementById("cuerpos").innerHTML;
         // document.getElementById("cuerpos").innerHTML += "<br>" + i.descrip;
-        document.getElementById("cuerpos").innerHTML += "<button class='btnn' onclick=\"FiltroCuerpo('" + i.cuerpo + "');\"><i class='bi bi-building'></i >" + i.descrip + "</button>";
+        document.getElementById("cuerpos").innerHTML += "<button class='btnn' onclick=\"FiltroCuerpo('" + i.cuerpo + "');\"><i class='bi bi-building'></i > " + i.descrip + "</button>";
     })
 }
 
