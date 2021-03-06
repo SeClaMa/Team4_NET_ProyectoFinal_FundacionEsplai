@@ -68,7 +68,7 @@ function TrabajadoresCompleto() {
                 },
                 pageSize: 20
             },
-            height: 550,
+            height: 900,
             filterable: true,
             sortable: true,
             pageable: true,

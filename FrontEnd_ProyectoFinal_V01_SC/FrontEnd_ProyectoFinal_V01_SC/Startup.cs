@@ -35,7 +35,7 @@ namespace FrontEnd_ProyectoFinal_V01_SC
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
-            services.AddRazorPages();         
+            services.AddRazorPages().AddRazorRuntimeCompilation();         
             services.AddMvc();
 
             services.AddAuthorization(options =>
