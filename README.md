@@ -25,9 +25,25 @@ SO                Fedora 32
 ```
 ###### packages Nuget 
 ```
-Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design  -Version 3.1.4
-Install-Package Microsoft.EntityFrameworkCore.Tools               -Version 3.1.8
-Install-Package Microsoft.EntityFrameworkCore.SqlServer           -Version 3.1.8
+BackEnd
+Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design  -Version 3.1.5
+Install-Package Microsoft.EntityFrameworkCore.Tools               -Version 3.1.12
+Install-Package Microsoft.EntityFrameworkCore.SqlServer           -Version 3.1.12
+Install-Package Microsoft.AspNetCore.Authentication.JwtBearer     -Version 3.1.8
+Install-Package Microsoft.EntityFrameworkCore.Sqlite              -Version 3.1.12
+Install-Package Swashbuckle.AspNetCore                            -Version 6.0.7
+Install-Package System.IdentityModel.Tokens.Jwt                   -Version 5.6.0
+
+FrontEnd
+Install-Package bootstrap                                         -Version 4.6.0
+Install-Package Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore  -Version 3.1.10
+Install-Package Microsoft.AspNetCore.Identity.EntityFrameworkCore -Version 3.1.12
+Install-Package Microsoft.AspNetCore.Identity.UI                  -Version 3.1.12
+Install-Package Microsoft.EntityFramework.SqlServer               -Version 3.1.12
+Install-Package Microsoft.EntityFrameworkCore.Tools               -Version 3.1.12
+Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design  -Version 3.1.5
+
+
 ```
 ###### Cadena de Conexión Base de datos 
 ```
@@ -62,5 +78,20 @@ DELETE    /api/UserInfo/{id}
 
 #### 5. Screenshot imagen que indique cómo debe verse el proyecto.
 ##### Vista del Swagger de la API
-En esta vista se pueden ver todos los endpoints disponibles en la API
+En esta vista se puede ver todos los endpoints disponibles en la API
 ![image](https://user-images.githubusercontent.com/11030691/110203814-79cf5580-7e70-11eb-9d73-3e92e4f45252.png)
+
+##### Vista del login de la aplicación
+En esta vista se puede ver como se logearian los usuarios que tengan cuenta en la aplicación
+![image](https://user-images.githubusercontent.com/11030691/110204630-5c03ef80-7e74-11eb-9fe6-b0b27bd707a9.png)
+
+##### Vista del registro de la aplicación
+En esta vista se puede ver como se registraria un usuario que no tiene cuenta en la aplicación, para registrarse se necesita que la contraseña contenga una mayuscula, una minúscula, un carácter especial, un número y tiene que tener como mínimo 8 carácteres
+![image](https://user-images.githubusercontent.com/11030691/110204689-a8e7c600-7e74-11eb-870f-a304d4224e82.png)
+
+##### Vista del interior de la aplicación una vez logeado el usuario
+En esta vista se puede ver la tabla de trabajadores, en esta tabla se muestran los campos de ID, Foto, Trabajador/a, TP, Tipo Empleado/a, Grupo, Cuerpo y Categoria. A partir de esta vista se puede hacer que se muestren los trabajadores según el cuerpo donde hay de 7 tipos: Administrativos, Bomberos, Educación, Justicia, Personal militar, Policias y Seguridad municipal.
+![image](https://user-images.githubusercontent.com/11030691/110205877-e2bbcb00-7e7a-11eb-8f28-a2f03b60dbae.png)
+
+
+
