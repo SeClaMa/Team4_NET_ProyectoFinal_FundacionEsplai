@@ -1,0 +1,326 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/* Navbar */
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Etiqueta a */
+a {
+    color: #0366d6;
+}
+
+/* Clase botón */
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Navbar */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Etiqueta HTML */
+html {
+    font-size: 14px;
+}
+/* Etiqueta HTML cuando la ancha de pantalla sea 768px, tamaño de letra se reduce */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Border */
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+/* Border */
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+/* Sombra*/
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+/* Botón */
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+/* Etiqueta HTML */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* estilos personalizados plantilla bootstrap vista trabajadores*/
+/* Vista login */
+.loginC {
+    display: flex;
+    justify-content: center;
+}
+
+.loginH {
+    text-align: center
+}
+
+/* Vista registro */
+.registerC {
+    display: flex;
+    justify-content: center;
+}
+
+.registerH {
+    text-align: center
+}
+
+/* Vista recuperar contraseña */
+.forgeC {
+    display: flex;
+    justify-content: center;
+}
+
+.forgeH1 {
+    text-align: center
+}
+
+.forgeH4 {
+    text-align: center
+}
+
+/* Clase row */
+.row {
+    margin-right: -15px;
+}
+
+/* Container azul de cabezera */
+.containerHead {
+    background-image: linear-gradient(to right, #0000ff, #000fd6, #0514af, #0e1488, #121263);
+    border: rgb(4, 4, 41) 1px solid;
+}
+
+/* Container de perfil personal */
+.container-profile {
+    margin: auto;
+    margin-left: 75px;
+}
+
+/* Div de cabezera */
+div.containerHead {
+    color: white;
+}
+
+/* Izquierda */
+div#leftIc {
+    float: left;
+    margin-right: auto;
+}
+
+/* Container */
+.container {
+    margin-right: 0px !important;
+}
+
+/* Margin left */
+.izq {
+    margin-left: 15vh;
+}
+
+/* Navbar lateral */
+#sidebar-wrapper {
+    left: 0px;
+    background: #000;
+    position: fixed;
+    height: 100%;
+    top: 0;
+}
+
+/* Contenido de navbar lateral */
+#page-content-wrapper {
+    width: 100%;
+}
+
+/* Navbar lateral */
+.sidebar-nav {
+    top: 0;
+    width: 75px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar lateral elementos */
+.sidebar-nav li {
+    background-color: black;
+    font-size: 90%;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    height: 60px;
+    padding: 10px;
+}
+
+/* Navbar lateral a */
+.sidebar-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Navbar lateral hover */
+.sidebar-nav li:hover {
+    background-color: blue;
+}
+
+/* Navbar lateral seleccionado */
+.sidebar-nav li.current {
+    background-color: blue;
+}
+
+/* Agregar padding-left */
+.pdd {
+    padding-left: 90px;
+}
+
+/* Sección noticia */
+.noticia {
+    width: auto;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+/* panel superior de la tabla*/
+.centrar {
+    font-size: 20px;
+    padding: .2rem;
+}
+
+/* Panel al lado de tabla */
+.panel-izquierda {
+    color: rgba(66, 66, 195, 0.849);
+    border-top: 1px solid gray;
+    background-color: #E5E7E9;
+    padding-left: 20px;
+    height: auto;
+    border-right: 1px solid gray;
+}
+
+/* Footer de panel de lado de tabla */
+.aside-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+/* Superior de la tabla */
+.superior_derecha {
+    background-color: #E5E7E9;
+    height: auto;
+    padding: 5px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+/* Kendo */
+.customClass .k-list .k-item {
+    color: red;
+    background: yellow;
+}
+
+/* Botón cuerpos */
+.btnn {
+    text-align: left;
+    font-size: 100%;
+    color: white;
+    background-color: #24248B;
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Botón cuerpos hover*/
+.btnn:focus {
+    transform: scale(1.05, 1.05);
+    transform-origin: right;
+    background-image: radial-gradient(circle, #0606ad, #080d9a, #0c1088, #0f1275, #121263);
+}
+
+/* Texto */
+.texto_tipo_puesto {
+    font-weight: 400;
+    color: white;
+    background: #63A2B0;
+    overflow: hidden;
+    padding: 5px;
+    width: 20px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+/* Formato redonda para foto */
+.imgRedonda {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #666;
+}
+
+/* Formato redonda para fondo */
+.fondoRedondo {
+    background-color: #546AA6;
+    color: white;
+    padding: 5px;
+    width: 25px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+/* Botón generar pdf */
+.boton_pdf {
+    font-size: 12px;
+    text-decoration: none;
+    padding: 8px;
+    font-weight: 600;
+    color: black;
+    background-color: #C8C9C7;
+    border-radius: 6px;
+    border: 1px solid #BBBCBC;
+}
+
+/* Botón generar pdf hover */
+.boton_pdf:hover {
+    color: black;
+    background-color: #BBBCBC;
+    text-decoration: none;
+    border: 1px solid #B1B3B3;
+}
+
+/* Kendo: Tabla hover */
+html .k-grid tr:hover {
+    background: #ececec;
+}
+/* Kendo: Tabla hover */
+html .k-grid tr.k-alt:hover {
+    background: #ececec;
+}
+
+/* Kendo: busqueda */
+.k-grid .k-grid-search {
+    margin-left: auto;
+    margin-right: 15px!important;
+}
