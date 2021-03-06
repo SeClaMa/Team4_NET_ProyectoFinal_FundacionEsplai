@@ -11,6 +11,7 @@ namespace API_ProyectoFinal.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //Controlador de la informacion del usuario
     public class UserInfoController : ControllerBase
     {
         private readonly BootcampDBContext _context;

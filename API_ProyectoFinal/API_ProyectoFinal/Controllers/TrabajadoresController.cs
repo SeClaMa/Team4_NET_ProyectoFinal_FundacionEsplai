@@ -24,7 +24,7 @@ namespace API_ProyectoFinal.Controllers
         {
             _context = context;
         }
-
+        //Creacion de la expresion de la DTO del trabajador con buscador de cuerpo
         private static readonly Expression<Func<Trabajadores, TrabajadoresBuscaDTO>> AsTrabajadoresBuscaDTO =
             b => new TrabajadoresBuscaDTO
             {
@@ -40,7 +40,7 @@ namespace API_ProyectoFinal.Controllers
                 Empresa = b.NivOrg.IdOrganigNavigation.IdEmpresaNavigation.DEmpresa,
                 Clave = b.Id
             };
-
+        //Creacion de la expresion de la DTO del trabajador pdf
         private static readonly Expression<Func<Trabajadores, TrabajadoresPdfDTO>> AsTrabajadoresPdfDTO =
             b => new TrabajadoresPdfDTO
             {
@@ -69,6 +69,7 @@ namespace API_ProyectoFinal.Controllers
 
         }
 
+        //Get que coge todos los campos necesarios para buscar los empleados según el cuerpo correspondiente
         [HttpGet("/Trabajadores/Cuerpo/{nombre}")]
         public IQueryable<TrabajadoresBuscaDTO> GetTrabajadoresBusca(string nombre)
         {
@@ -76,6 +77,7 @@ namespace API_ProyectoFinal.Controllers
                 .Select(AsTrabajadoresBuscaDTO);
         }
 
+        //Get que coge todos los campos necesarios que se muestran en la tabla principal del FrontEnd
         [HttpGet("all")]
         public IQueryable<TrabajadoresDTO> GetTrabajadoresAll()
         {
@@ -97,7 +99,7 @@ namespace API_ProyectoFinal.Controllers
 
             return trabajadores;
         }
-       
+       //Get el cual se pasa el id del trabajador y devuelve todos los campos del DTO TrabajadoresPdfDTO
         [HttpGet("pdf/{id}")]
         public IQueryable<TrabajadoresPdfDTO> GetTrabajadoresPDF(int id)
         {
@@ -119,80 +121,6 @@ namespace API_ProyectoFinal.Controllers
             return trabajadores;
         }
 
-        // PUT: api/Trabajadores/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        /*[HttpPut("{id}")]
-        public async Task<IActionResult> PutTrabajadores(string id, Trabajadores trabajadores)
-        {
-            if (id != trabajadores.IdEmpresa)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(trabajadores).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!TrabajadoresExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Trabajadores
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPost]
-        public async Task<ActionResult<Trabajadores>> PostTrabajadores(Trabajadores trabajadores)
-        {
-            _context.Trabajadores.Add(trabajadores);
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (TrabajadoresExists(trabajadores.IdEmpresa))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return CreatedAtAction("GetTrabajadores", new { id = trabajadores.IdEmpresa }, trabajadores);
-        }
-
-        // DELETE: api/Trabajadores/5
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<Trabajadores>> DeleteTrabajadores(string id)
-        {
-            var trabajadores = await _context.Trabajadores.FindAsync(id);
-            if (trabajadores == null)
-            {
-                return NotFound();
-            }
-
-            _context.Trabajadores.Remove(trabajadores);
-            await _context.SaveChangesAsync();
-
-            return trabajadores;
-        }
-        */
         private bool TrabajadoresExists(string id)
         {
             return _context.Trabajadores.Any(e => e.IdEmpresa == id);

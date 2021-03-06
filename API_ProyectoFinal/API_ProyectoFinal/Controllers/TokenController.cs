@@ -16,6 +16,7 @@ namespace API_ProyectoFinal.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //Controlador del token para los usuarios
     public class TokenController : ControllerBase
     {
         public IConfiguration _configuration;

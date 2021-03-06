@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace API_ProyectoFinal.DTO
 {
+    //DTO de la busqueda del trabajador por el tipo de cuerpo
     public class TrabajadoresBuscaDTO
     {
         public string Apellido1 { get; set; }

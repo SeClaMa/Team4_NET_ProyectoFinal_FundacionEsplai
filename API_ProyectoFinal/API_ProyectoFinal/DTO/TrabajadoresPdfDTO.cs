@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 
 namespace API_ProyectoFinal.DTO
 {
+    //DTO de la busqueda del trabajador para el pdf
+
     public class TrabajadoresPdfDTO
     {
         //Empresa

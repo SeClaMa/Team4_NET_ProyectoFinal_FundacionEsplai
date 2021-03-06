@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace API_ProyectoFinal.DTO
 {
+    //DTO del trabajador de la tabla principal
     public class TrabajadoresDTO
     {
         public string Apellido1 { get; set; }
