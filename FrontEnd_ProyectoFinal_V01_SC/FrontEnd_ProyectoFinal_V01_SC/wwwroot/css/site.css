@@ -72,12 +72,47 @@ body {
 
 /* estilos personalizados plantilla bootstrap vista trabajadores*/
 
+.loginC{
+    display: flex;
+    justify-content: center;
+}
+
+.loginH{
+    text-align:center
+}
+
+.registerC {
+    display: flex;
+    justify-content: center;
+}
+
+.registerH {
+    text-align: center
+}
+
+.forgeC {
+    display: flex;
+    justify-content: center;
+}
+
+.forgeH1 {
+    text-align: center
+}
+
+.forgeH4 {
+    text-align: center
+}
+
+.row{
+    margin-right: -15px;
+}
 
 .containerHead {
-    background-color: rgb(25, 25, 136);
+    background-image: linear-gradient(to right, #0000ff, #000fd6, #0514af, #0e1488, #121263);
     border: rgb(4, 4, 41) 1px solid;
 }
-.container-profile{
+
+.container-profile {
     margin: auto;
     margin-left: 75px;
 }
@@ -93,7 +128,7 @@ div#leftIc {
 
 .container {
     /* margin: 0px!important; */
-    min-width: 100%;
+    margin-right: 0px !important;
 }
 
 #cajaIzquierda #menuIz {
@@ -113,20 +148,21 @@ div#leftIc {
 
 #sidebar-wrapper {
     left: 0px;
-    width: 75px;
+    /*width: 100px;*/
     background: #000;
     position: fixed;
     height: 100%;
-    top: 20px;
+    top: 0;
 }
 
 #page-content-wrapper {
     width: 100%;
 }
 
+
 .sidebar-nav {
     /* position: absolute; */
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     width: 75px;
     list-style: none;
@@ -140,8 +176,8 @@ div#leftIc {
         text-align: center;
         line-height: 30px;
         color: white;
-        height: 70px;
-        padding: 20px;
+        height: 60px;
+        padding: 10px;
     }
 
     .sidebar-nav a {
@@ -158,8 +194,9 @@ div#leftIc {
     }
 
 .pdd {
-    padding-left: 85px;
+    padding-left: 90px;
 }
+
 
 .noticia {
     /* height: 50px; */
@@ -231,6 +268,23 @@ div#leftIc {
     background: yellow;
 }
 
+.btnn {
+    text-align: left;
+    font-size: 100%;
+    color: white;
+    background-color: #24248B;
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+}
+    .btnn:focus {
+        transform: scale(1.05,1.05);
+        transform-origin: right;
+        background-image: radial-gradient(circle, #0606ad, #080d9a, #0c1088, #0f1275, #121263);
+    }
+
 .texto_tipo_puesto {
     font-weight: 400;
     color: white;
@@ -252,11 +306,11 @@ div#leftIc {
 }
 
 .fondoRedondo {
-    background-color: #C8C9C7;
+    background-color: #546AA6;
     color: white;
     padding: 5px;
     width: 25px;
-    text-align:center;
+    text-align: center;
     border-radius: 25px;
 }
 
@@ -284,5 +338,10 @@ html .k-grid tr:hover {
 
 html .k-grid tr.k-alt:hover {
     background: #ececec;
+}
+
+.k-grid .k-grid-search {
+    margin-left: auto;
+    margin-right: 15px!important;
 }
 
